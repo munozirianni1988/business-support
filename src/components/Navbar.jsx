@@ -1,12 +1,15 @@
-
+import {NavLink} from 'react-router-dom'
+import{navbarData} from '../data/navbarData'
 
 function Navbar() {
   return (
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        {navbarData.map((item) => (
+          <li key={item.id}>
+            <NavLink to={item.path}>{item.title}</NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );
