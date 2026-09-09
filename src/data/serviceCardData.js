@@ -49,7 +49,7 @@ export const serviceCardData = [
         'Welcome guides',
         'Proofreading and editing',
     ],
-    pricing: [
+    packages: [
         {
             name: 'Small Documents', 
             price: 'From £30',
@@ -64,43 +64,39 @@ export const serviceCardData = [
         
     ]
   },
-  {
+  { //change services to array, and add packages as array of objects with name, price, and time.
     id: 3,
     title: 'Websites & Digital Support',
     image: 'https://via.placeholder.com/150',
-    description: 'Helping businesses build a professional online presence.',
-    services: [
-        {
+    description: 'Helping businesses build a professional online presence. We specialise in Business Websites, Holiday Lets, B&B websites, Landing pages, and Portfolio websites.',
+    services: ['Website creation and design', 'Website refresh and redesign', 'Responsive and mobile-friendly design', 'Website care plans', 'Website maintenance and updates', 'Website optimization for speed and performance', 'Website security and backups', 'Website analytics and reporting'],
+    packages: [
+            {
             name: 'Website creation and design',
             description: 'Creating a professional and user-friendly website for your business. We specialise in Business Websites, Holiday Lets, B&B websites, Landing pages, and Portfolio websites.',
             price: 'From £500',
             time: 'Variable depending on project scope',
-        },
-        {
-            name: 'Website care plans',
-            description: [
-                {
-                    title: 'Starter',
-                    description: 'Basic Updates.',
-                    price: '£30/month',
-                    time: '1 hour per month',
-                },
-                {
-                    title: 'Business',
-                    description: 'Content Updates, Monthly checks and Backup Reminders.',
-                    price: '£60/month',
-                    time: '2 hours per month',
-                },
-                {
-                    title: 'Premium',
-                    description: 'Content Updates, Monthly checks, Backup Reminders, Priority Support, and Ongoing Improvements.',
-                    price: '£120/month',
-                    time: '4 hours per month',
-                }
-            ]
-        }
-    ]
-  },
+            },
+            {
+            name: 'Starter Care Plan: Basic Updates',
+            description: '',
+            price: '£30/month',
+            time: '1 hour per month',
+            },
+            {
+            name: 'Business Care Plan',
+            description: 'Content Updates, Monthly checks and Backup Reminders.',
+            price: '£60/month',
+            time: '2 hours per month',
+            },
+            {
+            name: 'Premium Care Plan',
+            description: 'Content Updates, Monthly checks, Backup Reminders, Priority Support, and Ongoing Improvements.',
+            price: '£120/month',
+            time: '4 hours per month',
+            }
+        ]
+    },
   {
     id: 4,
     title: 'Digital Growth. (Coming Soon)',
